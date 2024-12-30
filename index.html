@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artista Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link al CSS personalizzato -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Gabriele Ermini</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Benvenuti nel mio mondo artistico</h1>
+            <p class="lead">Scopri i miei lavori e le mie creazioni</p>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Galleria</h2>
+        <div class="row" id="masonry-grid">
+            <!-- Galleria con immagini e titoli -->
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <div class="gallery-content">
+                    <img src="images/opera1.jpeg" alt="Opera 1" class="img-fluid">
+                    <div class="gallery-title">
+                        Il tranello
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <div class="gallery-content">
+                    <img src="images/opera2.jpeg" alt="Opera 2" class="img-fluid">
+                    <div class="gallery-title">
+                        La corsa
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <div class="gallery-content">
+                    <img src="images/opera3.jpeg" alt="Opera 3" class="img-fluid">
+                    <div class="gallery-title">
+                        L'indeciso
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <div class="gallery-content">
+                    <img src="images/opera4.jpeg" alt="Opera 4" class="img-fluid">
+                    <div class="gallery-title">
+                        Frecce nel sonno
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <div class="gallery-content">
+                    <img src="images/opera5.jpeg" alt="Opera 5" class="img-fluid">
+                    <div class="gallery-title">
+                        Cavaliere
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <div class="gallery-content">
+                    <img src="images/opera6.jpeg" alt="Opera 6" class="img-fluid">
+                    <div class="gallery-title">
+                        Uova nello studio
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About</h2>
+        <p class="text-center">
+Gabriele Ermini
+
+Born in Figline Valdarno (ITA) in 1996. 
+
+Lives and works between Florence and Bologna. 
+
+Primarily interested in painting, with a focus on the specificity of the medium and its limits, Gabriele Ermini’s research is on an expressly figurative line. The digital and graphic matrix of his works leads to the construction of an image whose rendering conceals the process and pictorial solutions that determine it. The subject often comes into being as a pure pretext for painting, ceding importance to the other elements of the composition, seeking to mature and maintain a formal research in battle with the rhetoric of painting.
+
+
+Gabriele Ermini’s stylistic signature is given by an intriguing blend of very simple and synthetic pop elements mixed with almost hyper-realistic parts. They are based on a predominant ultramarine chromatic, very strong, declined in various shades. The works have the strength and intensity of the color of Bic pens. The predominant technique is the airbrush, used to obtain perfect surfaces on which the artist intervenes by destabilizing them. The subjects are profoundly classic, ancient statues, vases with mythological representations, on which shades of blue are declined in lighter and darker shades to outline the images.
+
+Ermini's paintings, seemingly two-dimensional, both in large and small formats, reveal their full depth when observed up close. They consist of images in which hyper-figurative details are mixed with very painterly particulars: silhouettes of knights in red, or a yolk of a hard-boiled egg, a recurring subject (a reminiscence of Casorati?) in this series of works. And it is precisely from this overlap that the paintings activate.
+        <p class="text-center">
+            Esplora la mia galleria per scoprire di più sul mio percorso artistico e sulle storie dietro ogni opera.
+        </p>
+    </div>
+</section>
+
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Contatti</h2>
+        <p class="text-center mb-5">Hai domande o vuoi metterti in contatto con me? Compila il modulo qui sotto!</p>
+        
+        <!-- Modulo di contatto -->
+        <form action="YOUR_BACKEND_URL" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Messaggio</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-dark">Invia</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Gabriele Ermini. Tutti i diritti riservati.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Masonry JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <!-- Link al JavaScript personalizzato -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
